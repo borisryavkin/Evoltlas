@@ -1,6 +1,9 @@
-# Evolt Scanner Globe
+# Evoltas - Scanner Atlas 🌏
 
-Interactive globe UI for Evolt scanner status with a simple Express + SQLite backend.
+Interactive Real-time globe network UI visualization for body weight bmi scanners, displaying live online/offline status and geographic distribution through an interactive 3D globe.
+
+![ 2025-12-22 at 6 03 51 PM](https://github.com/user-attachments/assets/29d8543a-5956-4de4-8d8c-a9a08af2ff53)
+
 
 ## Structure
 
