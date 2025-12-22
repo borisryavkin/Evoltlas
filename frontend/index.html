@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evolt Scanner Globe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="panel">
+        <div class="brand">
+          <div class="brand-mark">EV</div>
+          <div>
+            <h1>Evolt Scan Network</h1>
+            <p class="subtitle">Live visibility for deployed scanners worldwide.</p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-label">Online</span>
+            <span class="stat-value" id="onlineCount">0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Offline</span>
+            <span class="stat-value" id="offlineCount">0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Total</span>
+            <span class="stat-value" id="totalCount">0</span>
+          </div>
+        </div>
+
+        <div class="legend">
+          <div class="legend-item">
+            <span class="dot dot-online"></span>
+            <span>Online</span>
+          </div>
+          <div class="legend-item">
+            <span class="dot dot-offline"></span>
+            <span>Offline</span>
+          </div>
+        </div>
+
+        <div class="list" id="scannerList"></div>
+        <div class="footer-note">Data source: backend API + SQLite</div>
+      </aside>
+
+      <main class="globe-wrap">
+        <div id="globe"></div>
+        <div class="overlay">
+          <div class="overlay-title">Scanner Status</div>
+          <div class="overlay-subtitle" id="lastUpdated">Updated: --</div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/globe.gl@2.32.0/dist/globe.gl.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
