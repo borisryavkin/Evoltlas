@@ -58,3 +58,7 @@ curl -X PUT http://localhost:4000/api/scanners/ev-par-13 \
 - Database file: `backend/data.sqlite`
 - Update the UI by editing `frontend/app.js` and `frontend/styles.css`.
 - The UI polls the API every 30 seconds.
+
+
+## TODO
+inventory managment for parts
